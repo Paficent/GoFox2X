@@ -1,3 +1,3 @@
-module iestyn129.dev/GoFox2X
+module paficent/GoFox2X
 
 go 1.23

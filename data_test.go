@@ -2,7 +2,7 @@ package gofox2x
 
 import (
 	"fmt"
-	"iestyn129.dev/GoFox2X/data"
+	"paficent/GoFox2X/data"
 	"testing"
 )
 
