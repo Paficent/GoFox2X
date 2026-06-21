@@ -11,7 +11,7 @@ import (
 )
 
 /*
- * Wire format (all integers big-endian, all signed, matching the Java client):
+ * Wire format (all integers are signed and big-endian):
  *
  *   object  := 0x12 <uint16 count> ( key value )*
  *   array   := 0x11 <uint16 count> ( value )*

@@ -1,4 +1,4 @@
 # GoFox2X
-A partial port of the SmartFoxServer2X client.
+A partial port of the SmartFoxServer2X server and client.
 
-This is a fork of the original work iestyn129 commited to the project.
+This project is a fork of a partial client implementation that adds enough for users to create simple game servers.
