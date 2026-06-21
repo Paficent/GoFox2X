@@ -39,9 +39,8 @@ func (w *GFSDataWrapper) Dump(key string, indents int) string {
 		return typeToString(w.TypeID.Name, joinArray(w.Data.([]string)))
 	case GFS_ARRAY:
 		return fmt.Sprintf("%s%v", indent, w.Data.(*GFSArray).Dump(indents))
-	// TODO:
-	//case GFS_OBJECT:
-	//	return typeToString(w.TypeID.Name, w.Data.(*GFSObject).Dump(indents + 1))
+	case GFS_OBJECT:
+		return fmt.Sprintf("%s%v", indent, w.Data.(*GFSObject).Dump(indents))
 	case NULL:
 		return typeToString(w.TypeID.Name, "null")
 	default:

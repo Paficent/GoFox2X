@@ -79,9 +79,8 @@ func GFSDataTypeFromVar(value interface{}) GFSDataType {
 		return UTF_STRING_ARRAY
 	case *GFSArray:
 		return GFS_ARRAY
-	// TODO:
-	//case GFSObject:
-	//	return
+	case *GFSObject:
+		return GFS_OBJECT
 	default:
 		return NULL
 	}
