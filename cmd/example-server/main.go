@@ -1,10 +1,3 @@
-/*
- * Extremely minimal example server:
- * go run ./cmd/example-server
- *
- * then point an SFS2X client at 127.0.0.1:9933.
- */
-
 package main
 
 import (
@@ -64,7 +57,7 @@ func handleLogin(c *transport.Conn, m *protocol.Message) {
 
 	login := data.MakeGFSObject().
 		PutShort("rs", 0).
-		PutUtfString("zn", "MySingingMonsters").
+		PutUtfString("zn", "ZoneName").
 		PutUtfString("un", username).
 		PutShort("pi", 1).
 		PutInt("id", 1).

@@ -1,7 +1,5 @@
 package protocol
 
-// ControllerID selects where a message is routed to.
-// Encoded as the byte field "c" of the envelope.
 type ControllerID byte
 
 const (
@@ -29,9 +27,8 @@ const (
 	ActionLogout    Action = 2
 )
 
-// Some SFS2X builds use 13 for the extension CALL action; confirm against the client you are targeting
 const (
-	ActionExtensionCall Action = 12
+	ActionExtensionCall Action = 13
 )
 
 // int->string for the String method

@@ -43,6 +43,22 @@ func (s *GFSArray) AddObject(wrapper GFSDataWrapper) {
 	s.DataHolder = append(s.DataHolder, &wrapper)
 }
 
+func (s *GFSArray) add(value interface{}, typeID GFSDataType) {
+	s.DataHolder = append(s.DataHolder, &GFSDataWrapper{Data: value, TypeID: typeID})
+}
+
+func (s *GFSArray) AddNull()                      { s.add(nil, NULL) }
+func (s *GFSArray) AddBool(value bool)            { s.add(value, BOOL) }
+func (s *GFSArray) AddByte(value byte)            { s.add(value, BYTE) }
+func (s *GFSArray) AddShort(value int16)          { s.add(value, SHORT) }
+func (s *GFSArray) AddInt(value int)              { s.add(value, INT) }
+func (s *GFSArray) AddLong(value int64)           { s.add(value, LONG) }
+func (s *GFSArray) AddFloat(value float32)        { s.add(value, FLOAT) }
+func (s *GFSArray) AddDouble(value float64)       { s.add(value, DOUBLE) }
+func (s *GFSArray) AddUtfString(value string)     { s.add(value, UTF_STRING) }
+func (s *GFSArray) AddSFSArray(value *GFSArray)   { s.add(value, GFS_ARRAY) }
+func (s *GFSArray) AddSFSObject(value *GFSObject) { s.add(value, GFS_OBJECT) }
+
 func (s *GFSArray) RemoveObject(wrapper *GFSDataWrapper) {
 	newDataHolder := make([]*GFSDataWrapper, 0, len(s.DataHolder))
 	for _, value := range s.DataHolder {

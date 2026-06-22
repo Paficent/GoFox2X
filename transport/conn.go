@@ -17,6 +17,8 @@ type Conn struct {
 
 	Host string
 	Port int
+
+	Session any
 }
 
 func newConn(nc net.Conn) *Conn {
