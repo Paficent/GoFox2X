@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"paficent/GoFox2X/data"
-	"paficent/GoFox2X/protocol"
-	"paficent/GoFox2X/server"
-	"paficent/GoFox2X/transport"
+	"github.com/Paficent/GoFox2X/data"
+	"github.com/Paficent/GoFox2X/protocol"
+	"github.com/Paficent/GoFox2X/server"
+	"github.com/Paficent/GoFox2X/transport"
 )
 
 const listenAddr = "0.0.0.0:9933"

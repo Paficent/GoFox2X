@@ -1,6 +1,6 @@
 package protocol
 
-import "paficent/GoFox2X/data"
+import "github.com/Paficent/GoFox2X/data"
 
 type Room struct {
 	ID                  int

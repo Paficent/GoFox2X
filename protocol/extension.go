@@ -1,6 +1,6 @@
 package protocol
 
-import "paficent/GoFox2X/data"
+import "github.com/Paficent/GoFox2X/data"
 
 func ParseExtensionRequest(m *Message) (string, *data.GFSObject, bool) {
 	if m.Controller != Extension || m.Action != ActionExtensionCall {

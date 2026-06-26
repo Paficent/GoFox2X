@@ -1,3 +1,3 @@
-module github.com/paficent/GoFox2X
+module github.com/Paficent/GoFox2X
 
 go 1.23

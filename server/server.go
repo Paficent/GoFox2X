@@ -12,8 +12,8 @@
 package server
 
 import (
-	"paficent/GoFox2X/protocol"
-	"paficent/GoFox2X/transport"
+	"github.com/Paficent/GoFox2X/protocol"
+	"github.com/Paficent/GoFox2X/transport"
 )
 
 type Handler interface {

@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"sync"
 
-	"paficent/GoFox2X/protocol"
+	"github.com/Paficent/GoFox2X/protocol"
 )
 
 type Conn struct {
